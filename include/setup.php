@@ -21,3 +21,18 @@ function gp_after_setup() {
     register_nav_menu('primary', __('Primary Menu', 'primeirotema'));
     register_nav_menu('footer', 'Menu Rodapé');
 }
+
+// 3-Criando Widgets
+function gp_widgets() {
+    register_sidebar(array(
+        'name' => __('Meu Primeiro Sidebar', 'primeirotema'),
+        'id' => 'gb_sidebar',
+        'description' => __('Sidebar para o tema', 'primeirotema'),
+
+        'before_title' => '<h4 class="widget_title">',
+        'after_title' => '</h4>',
+
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>'
+    ));
+}

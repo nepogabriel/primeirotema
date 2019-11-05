@@ -1,3 +1,32 @@
+body h1 {
+    color: green;
+}
+
+/* MENU */
 .main_menu {
+    color: green;
+}
+.main_menu ul,
+.main_menu li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.main_menu li {
+    display: inline;
+}
+
+/* CONTEÚDO & SIDEBAR */
+.container {
+    width: 70%;
+    float: left;
+}
+
+aside {
+    width: 30%;
+    float: left;
+}
+
+.widget_title {
     color: green;
 }
