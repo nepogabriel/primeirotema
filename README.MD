@@ -1,0 +1,1 @@
+Primeiro template simples feito em curso para aprender os comandos do Wordpress.
