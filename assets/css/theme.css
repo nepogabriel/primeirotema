@@ -30,3 +30,17 @@ aside {
 .widget_title {
     color: green;
 }
+
+/* Páginação */
+.paginacao {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.pagina_anterior {
+    float: left;
+}
+
+.proxima_pagina {
+    float: right;
+}
