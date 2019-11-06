@@ -12,7 +12,7 @@ function gp_theme_styles() {
 
 }
 
-// 2-Habilitando a Menu
+// 2-Habilitando a Menu / Miniaturas dos posts
 function gp_after_setup() {
     //suporte menu
     add_theme_support('menus');
@@ -20,6 +20,9 @@ function gp_after_setup() {
     //registrando menu
     register_nav_menu('primary', __('Primary Menu', 'primeirotema'));
     register_nav_menu('footer', 'Menu Rodapé');
+
+    //miniaturas dos posts
+    add_theme_support('post-thumbnail');
 }
 
 // 3-Criando Widgets
