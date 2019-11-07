@@ -44,3 +44,14 @@ aside {
 .proxima_pagina {
     float: right;
 }
+
+/* Comentários */
+.comentario {
+    border-bottom: 1px solid #C000;
+
+}
+
+.comentario_foto {
+    float: left;
+    margin-right: 10px;
+}

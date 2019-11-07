@@ -32,10 +32,30 @@
               <?php the_content(); ?>
             </p>
 
+            <!-- Anterior e Próximo Post -->
+            <div class="paginacao">
+              <div class="pagina_anterior">
+                <?php previous_post_link(); ?>
+              </div>
+
+              <div class="proxima_pagina">
+                <?php next_post_link() ?>
+              </div>
+            </div>
+
+            <br><br><hr>
+
             <!-- Comentários -->
             <p>
               <?php comments_number('0 comentários', '1 comentário', '% comentários'); ?>
             </p>
+
+            <!-- Verificando se sem comentários -->
+            <?php 
+              if( comments_open() ) {
+                comments_template();
+              }
+            ?>
 
           </article>
 
@@ -43,16 +63,7 @@
       <?php endif; ?>
 
 
-      <!-- Anterior e Próximo Post -->
-      <div class="paginacao">
-        <div class="pagina_anterior">
-          <?php previous_post_link(); ?>
-        </div>
-
-        <div class="proxima_pagina">
-          <?php next_post_link() ?>
-        </div>
-      </div>
+      
 
     </div>
 
