@@ -2,6 +2,9 @@
   
   <section>
     <div class="container">
+
+    <!-- Título p/ mostrar a categoria -->
+    <h1><?php the_archive_title(); ?></h1>
       
       <!-- Verificar se tem posts -->
       <?php if(have_posts()): ?>
