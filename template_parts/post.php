@@ -1,4 +1,4 @@
-          <!-- Estrutura do post -->
+          <!-- Estrutura do feed de posts -->
           <article>
 
             <!-- Miniatura do post (imagem) -->

@@ -1,7 +1,13 @@
+<?php
+/*
+Template Name: Post s/ Sidebar
+Template Post Type: post
+*/
+?>
 <?php get_header(); ?>
   
   <section>
-    <div class="container">
+    <div class="container fullwidth">
       
       <!-- Verificar se tem posts -->
       <?php if(have_posts()): ?>
@@ -44,33 +50,6 @@
             </div>
 
             <br><br><hr>
-            
-            <!-- Requisição secundária p/ mostrar os posts relacionados -->
-            <h3>Posts Relacionados:</h3>
-            <?php
-              $categories = get_the_category(); //buscando categorias do post (é um array)
-
-              $gp_query = new WP_Query(array(
-                'posts_per_page' => 3, //quantidade de posts
-                'post__not_in' => array( $post->ID ), //p/ não mostrar o post que está aberto
-                'cat' => $categories[0]->term_id //pegando primeira categoria do post
-              ));
-              
-              //Verificando se tem posts relacionados
-              if($gp_query->have_posts()) {
-                while($gp_query->have_posts()) {
-                  $gp_query->the_post();
-                  get_template_part('template_parts/related_post'); //Chamando arquivo related_post
-                }
-
-                //reseta e volta com requisições principais (por exemplo, p/ mostrar comentários e paginação)
-                wp_reset_postdata();
-              }
-            ?>
-
-            <div style="clear:both"></div>
-
-            <hr class="linha">
 
             <!-- Comentários -->
             <p>
@@ -89,12 +68,7 @@
         <?php endwhile; ?>
       <?php endif; ?>
 
-
-
-
     </div>
-
-    <?php get_sidebar(); ?>
 
     <div style="clear:both"></div>
   </section>
