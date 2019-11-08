@@ -14,7 +14,7 @@ function gp_theme_styles() {
 
 // 2-Habilitando a Menu / Miniaturas dos posts
 function gp_after_setup() {
-    //suporte menu
+    //registrando menu em versões antigas do wp
     add_theme_support('menus');
 
     //registrando menu
@@ -23,6 +23,12 @@ function gp_after_setup() {
 
     //miniaturas dos posts
     add_theme_support('post-thumbnail');
+
+    //Título do site dinâmico
+    add_theme_support('title-tag');
+
+    //P/ adicionar logo
+    add_theme_support('custom-logo');
 }
 
 // 3-Criando Widgets

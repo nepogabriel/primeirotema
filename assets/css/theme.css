@@ -70,3 +70,12 @@ aside {
 .linha {
     color: #000;
 }
+
+/*Tamnho da logo*/
+.custom-logo {
+    height: 70px;
+    width: 300px;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}

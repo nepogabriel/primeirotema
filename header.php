@@ -6,8 +6,17 @@
 
     <body <?php body_class(); ?>>
         <header>
-            <h1>Meu primeiro tema</h1>
 
+            <?php
+                if(has_custom_logo()) {
+                    the_custom_logo();
+                }
+            ?>
+
+            <h1><a href="<?php echo home_url('/'); ?>"> <?php bloginfo('name'); ?> </a></h1>
+
+            <div style="clear:both"></div>
+            
             <!-- Verificando se o menu existe -->
             <?php
             if( has_nav_menu('primary') ) {
