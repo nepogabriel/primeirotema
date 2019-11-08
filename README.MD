@@ -1,1 +1,1 @@
-Primeiro template simples feito em curso para aprender os comandos do Wordpress.
+Primeiro template simples feito em curso apenas para aprender os comandos do Wordpress.
